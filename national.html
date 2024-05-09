@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -19,8 +19,8 @@
 			--purple: #96009e;
 			--white: white;
 			--fs-normal: 15px;
-			--h2: 1.4rem;
-			--h3: 1.2rem;
+			--h2: 1.4em;
+			--h3: 1.2em;
 			--extra-bold: 800;
 			--bold: 700;
 			--semi-bold: 500;
@@ -30,8 +30,9 @@
 			--btn-padding: 24px 32px;
 		}
 
-		/* ESTILOS GENERALES */
+		/* ================= ESTILOS GENERALES ===============*/
 		body {
+			margin: 0;
 			font-family: "Montserrat";
 			font-size: var(--fs-nomral);
 			font-weight: var(--normal);
@@ -40,6 +41,29 @@
 			min-height: 100vh;
 			height: 100%;
 			text-align: center;
+		}
+
+		/* CONTAINER */
+		.container {
+			max-width: var(--content-area);
+			width: var(--content-area);
+			min-width: 375px;
+			/* 	border: 1px solid red; */
+		}
+
+		/* ESTILOS DE ROWS */
+		.row {
+			padding: 1rem;
+		}
+
+		.row-blue {
+			background-color: var(--blue);
+			color: var(--white);
+		}
+
+		.image-container img {
+			width: 375px;
+			height: 600px;
 		}
 
 		h1 {
@@ -67,6 +91,7 @@
 			gap: 24px;
 		}
 
+		/* ================================================== */
 		/* FONT WEIGHTS  */
 		.extra-bold {
 			font-weight: var(--extra-bold);
@@ -112,23 +137,26 @@
 			color: var(--white);
 		}
 
-		/* CONTAINER */
-		.container {
-			max-width: var(--content-area);
-			width: var(--content-area);
-			min-width: 375px;
-			/* 	border: 1px solid red; */
-		}
+		/* MEDIA QUERYS */
+		@media screen and (max-width: 650px) {
+			h1 {
+				font-size: 20px;
+				letter-spacing: 0;
+			}
 
-		/* ESTILOS DE ROWS */
-		.row {
-			/* 	border: 1px solid black; */
-			padding: 1rem;
-		}
+			.btn {
+				width: 100%;
+				font-size: 18px;
+			}
 
-		.row-blue {
-			background-color: var(--blue);
-			color: var(--white);
+			.image-container {
+				border: 1px solid black;
+				paddgin: 0;
+			}
+
+			.image-container img {
+				width: 100%;
+			}
 		}
 	</style>
 
@@ -140,8 +168,8 @@
 			<h1>¡APROVECHA NUESTRA NUEVA <br>SUPER PROMOCIÓN DE MAYO!</h1>
 		</div>
 
-		<div class="row">
-			<img style='width: 375px;height: 600px;' src="" alt="">
+		<div class="row image-container">
+			<img src="" alt="">
 		</div>
 
 		<div class="row">
@@ -159,6 +187,7 @@
 			<p class='semi-bold'>Hecho con mucho cariño para todos nuestros queridos clientes de <br><a href="#"><b>National Entertainment</b></a></p>
 		</div>
 	</div>
+
 </body>
 
 </html>
