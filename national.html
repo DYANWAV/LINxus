@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/e0c69e0757.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		:root {
+			--blue: #2360ff;
+			--red: #f21d1d;
+			--green: #00ad1c;
+			--black: #051723;
+			--gray: #bababa;
+			--purple: #96009e;
+			--white: white;
+			--fs-normal: 15px;
+			--h2: 1.4rem;
+			--h3: 1.2rem;
+			--extra-bold: 800;
+			--bold: 700;
+			--semi-bold: 500;
+			--normal: 400;
+			--letter-spacing-1: 3px;
+			--content-area: 900px;
+			--btn-padding: 24px 32px;
+		}
+
+		/* ESTILOS GENERALES */
+		body {
+			font-family: "Montserrat";
+			font-size: var(--fs-nomral);
+			font-weight: var(--normal);
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+			height: 100%;
+			text-align: center;
+		}
+
+		h1 {
+			font-weight: var(--extra-bold);
+			letter-spacing: var(--letter-spacing-1);
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		i.fa-brands {
+			font-size: 32px;
+		}
+
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+			justify-content: center;
+		}
+
+		.icons-container {
+			display: flex;
+			gap: 24px;
+		}
+
+		/* FONT WEIGHTS  */
+		.extra-bold {
+			font-weight: var(--extra-bold);
+		}
+
+		.bold {
+			font-weight: var(--bold);
+		}
+
+		.semi-bold {
+			font-weight: var(--semi-bold);
+		}
+
+		/* COLORES DE FUENTES */
+		.text-blue {
+			color: var(--blue);
+		}
+
+		.text-white {
+			color: var(--white);
+		}
+
+		/* ESTILOS DE BOTONES */
+		.btn {
+			border: none;
+			padding: 1rem;
+			border-radius: 50px;
+			min-width: 200px;
+			text-transform: uppercase;
+			font-family: "Montserrat";
+			cursor: pointer;
+			padding: var(--btn-padding);
+		}
+
+		.btn-big {
+			width: 375px;
+			font-weight: var(--extra-bold);
+			font-size: var(--h2);
+		}
+
+		.btn-blue {
+			background-color: var(--blue);
+			color: var(--white);
+		}
+
+		/* CONTAINER */
+		.container {
+			max-width: var(--content-area);
+			width: var(--content-area);
+			min-width: 375px;
+			/* 	border: 1px solid red; */
+		}
+
+		/* ESTILOS DE ROWS */
+		.row {
+			/* 	border: 1px solid black; */
+			padding: 1rem;
+		}
+
+		.row-blue {
+			background-color: var(--blue);
+			color: var(--white);
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row row-blue">
+			<h1>¡APROVECHA NUESTRA NUEVA <br>SUPER PROMOCIÓN DE MAYO!</h1>
+		</div>
+
+		<div class="row">
+			<img style='width: 375px;height: 600px;' src="" alt="">
+		</div>
+
+		<div class="row">
+			<button class="btn btn-blue btn-big"><a target='_blank' href="#">Obtener Promoción</a></button>
+			<p class='text-blue bold'>Aquí un párrafo de algo. Más información sobre la promoción. <br>Síguenos en National Entertainment</p>
+		</div>
+
+		<div class="row row-blue">
+			<h3>SÍGUENOS EN NUESTRAS <br>REDES SOCIALES</h3>
+			<div class="d-flex icons-container">
+				<i class="fa-brands fa-facebook"><a href="#"></a></i>
+				<i class="fa-brands fa-instagram"><a href="#"></a></i>
+				<i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+			</div>
+			<p class='semi-bold'>Hecho con mucho cariño para todos nuestros queridos clientes de <br><a href="#"><b>National Entertainment</b></a></p>
+		</div>
+	</div>
+</body>
+
+</html>
