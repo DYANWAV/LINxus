@@ -28,6 +28,7 @@
 			--letter-spacing-1: 3px;
 			--content-area: 900px;
 			--btn-padding: 24px 32px;
+			--mr-1: 10px;
 		}
 
 		/* ================= ESTILOS GENERALES ===============*/
@@ -78,12 +79,23 @@
 
 		i.fa-brands {
 			font-size: 32px;
+			color: #ddd;
+			cursor: pointer;
+		}
+
+		i.fa-brands:hover {
+			color: var(--white);
+			transform: scale(110%);
 		}
 
 		/* DISPLAY FLEX */
 		.d-flex {
 			display: flex;
 			justify-content: center;
+		}
+
+		.mr-1 {
+			margin: var(--mr-1);
 		}
 
 		.icons-container {
@@ -173,18 +185,18 @@
 		</div>
 
 		<div class="row">
-			<button class="btn btn-blue btn-big"><a target='_blank' href="#">Obtener Promoción</a></button>
+			<button class="btn btn-blue btn-big"><a target='_blank' href="https://api.whatsapp.com/send?phone=584125010030">Obtener Promoción </a></button>
 			<p class='text-blue bold'>Aquí un párrafo de algo. Más información sobre la promoción. <br>Síguenos en National Entertainment</p>
 		</div>
 
 		<div class="row row-blue">
 			<h3>SÍGUENOS EN NUESTRAS <br>REDES SOCIALES</h3>
 			<div class="d-flex icons-container">
-				<i class="fa-brands fa-facebook"><a href="#"></a></i>
-				<i class="fa-brands fa-instagram"><a href="#"></a></i>
-				<i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+				<a href="https://www.facebook.com/profile.php?id=61553814224219" target='_blank'><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/naentertainment.ve/" target='_blank'><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://api.whatsapp.com/send?phone=584125010030" target='_blank'><i class="fa-brands fa-whatsapp"></i></a>
 			</div>
-			<p class='semi-bold'>Hecho con mucho cariño para todos nuestros queridos clientes de <br><a href="#"><b>National Entertainment</b></a></p>
+			<p class='semi-bold'>Hecho con mucho cariño para todos nuestros queridos clientes de <br><a href="https://naentertainmentve.com/inicio/" title='National Entertainment'><b>National Entertainment</b></a></p>
 		</div>
 	</div>
 
