@@ -9,9 +9,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Document</title>
+
 	<style>
 		:root {
 			--blue: #2360ff;
+			--blue-hover: #1150ee;
 			--red: #f21d1d;
 			--green: #00ad1c;
 			--black: #051723;
@@ -63,8 +65,12 @@
 		}
 
 		.image-container img {
-			width: 375px;
-			height: 600px;
+			/* 	display: block; */
+			/* 	margin: auto; */
+			/* 	width: 375px; */
+			/* 	height: 600px; */
+			height: auto;
+			width: auto;
 		}
 
 		h1 {
@@ -81,11 +87,6 @@
 			font-size: 32px;
 			color: #ddd;
 			cursor: pointer;
-		}
-
-		i.fa-brands:hover {
-			color: var(--white);
-			transform: scale(110%);
 		}
 
 		/* DISPLAY FLEX */
@@ -149,6 +150,20 @@
 			color: var(--white);
 		}
 
+		/*============ HOVER: HOVER ============*/
+		@media (hover: hover) {
+			.btn-blue:hover {
+				background-color: var(--blue-hover);
+				color: var(--white);
+			}
+
+			i.fa-brands:hover {
+				color: var(--white);
+				transform: scale(110%);
+			}
+		}
+
+		/* =================================== */
 		/* MEDIA QUERYS */
 		@media screen and (max-width: 650px) {
 			h1 {
@@ -162,7 +177,6 @@
 			}
 
 			.image-container {
-				border: 1px solid black;
 				paddgin: 0;
 			}
 
@@ -170,18 +184,43 @@
 				width: 100%;
 			}
 		}
+
+		/* === */
+		.national-logo {
+			/* 	clip-path: inset(0 0 31% 0); */
+		}
+
+		.national-logo-a {}
+
+		.national-logo-container {
+			width: 90px;
+			height: 90px;
+			/* 	border: 1px solid black; */
+			margin: auto;
+			background-position: center;
+			background-position-y: 23%;
+			background-repeat: no-repeat;
+			background-image: url("https://05e78ad436.imgdist.com/pub/bfra/3c38dowi/cbk/04s/ew3/LOGO-NATIONAL-ENTERNTAINMENT_150x150.png");
+		}
 	</style>
 
 </head>
 
 <body>
 	<div class="container">
+
+		<div style='' class="row image-container">
+			<div class="national-logo-container">
+				<a class='national-logo-a' style="" href="#"></a>
+			</div>
+		</div>
+
 		<div class="row row-blue">
 			<h1>¡APROVECHA NUESTRA NUEVA <br>SUPER PROMOCIÓN DE MAYO!</h1>
 		</div>
 
 		<div class="row image-container">
-			<img src="" alt="">
+			<img src="https://05e78ad436.imgdist.com/pub/bfra/3c38dowi/04i/9mk/bvn/PROMO-MAYO-copia_500x889-RECORTADA.webp" alt="">
 		</div>
 
 		<div class="row">
